@@ -4,13 +4,15 @@ This script generates passwords using
 [xkcd's algorithm](https://xkcd.com/936/) (stringing together several random
 dictionary words). This gives passwords that are strong and easy to remember.
 
-> Usage:  gen-password  <options>
-> 
-> Options:
-> --help               Prints this screen.
-> --dictionary=(file)  Specifies dictionary; default is "/usr/share/dict/words".
-> --numwords=N         Specifies number of words; default is 4.
-> --debug-dict         Prints dictionary debugging information.
+```
+Usage:  gen-password  <options>
+
+Options:
+--help               Prints this screen.
+--dictionary=(file)  Specifies dictionary; default is "/usr/share/dict/words".
+--numwords=N         Specifies number of words; default is 4.
+--debug-dict         Prints dictionary debugging information.
+```
 
 **NOTE** - This uses `rand()` for random number generation. While that's
 not cryptographically strong, it should be more than good enough for this
